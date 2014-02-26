@@ -16,28 +16,28 @@
 
 	if (EPOCH_MISSION_RUNNING) exitWith 
 	{
-	diag_log("Event already running");
+	diag_log("Mission already running");
 	};
 
 // CHECK FOR ANOTHER MISSION RUNNING END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-private ["_eventSpawnChance", "_spawnMarker", "_spawnRadius", "_markerRadius", "_item", "_debug", "_start_time", "_wait_time", "_spawnRoll", "_position", "_event_marker", "_loot_pos", "_hint", "_timeout", "_hostagegroup", "_hostage1", "_hostage2", "_attackgroup", "_attacker1", "_attacker2", "_attacker3", "_attacker4", "_hostageunitsAlive", "_attackerunitsAlive", "_hostagecamp", "_markercolor"];
+private ["_missionSpawnChance", "_spawnMarker", "_spawnRadius", "_markerRadius", "_item", "_debug", "_start_time", "_wait_time", "_spawnRoll", "_position", "_event_marker", "_loot_pos", "_hint", "_timeout", "_hostagegroup", "_hostage1", "_hostage2", "_attackgroup", "_attacker1", "_attacker2", "_attacker3", "_attacker4", "_hostageunitsAlive", "_attackerunitsAlive", "_hostagecamp", "_markercolor"];
 
 
 diag_log("MISSION: Hostage Rescue Script Started");
 
-_eventSpawnChance =  .50;
+_missionSpawnChance =  .50;
 _spawnRoll = random 1;
 
-diag_log("MISSION: Hostage Rescue - Checking EventSpawnChance");
-if (_spawnRoll < _eventSpawnChance and !_debug) exitWith {};
+diag_log("MISSION: Hostage Rescue - Checking MissionSpawnChance");
+if (_spawnRoll < _missionSpawnChance and !_debug) exitWith {};
 
 sleep .5;
-diag_log("MISSION: Hostage Rescue - EventSpawnChance Success");
+diag_log("MISSION: Hostage Rescue - MissionSpawnChance Success");
 
 sleep .5;
-diag_log("MISSION: Hostage Rescue - Event Started");
+diag_log("MISSION: Hostage Rescue - Mission Started");
 
 EPOCH_MISSION_RUNNING = true;
 
