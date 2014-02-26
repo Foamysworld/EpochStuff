@@ -35,6 +35,7 @@ The call is expecting 5 parameters (position,loot position,marker radius, marker
 5) true or false - for debug true false (puts the dot where the loot position is for debug purposes)
 
 define the variables in your script before the marker call like this:
+
 _spawnRadius = 5000;
 _spawnMarker = 'center';
 _markerRadius = 350; // Radius the loot can spawn and used for the marker
