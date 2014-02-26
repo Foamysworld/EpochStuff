@@ -23,7 +23,7 @@ diag_log("Spawn Chance Success");
 diag_log("Selecting script and launching");
 
 _scriptslist = 
-		["\z\addons\dayz_server\addons\Fmission\Hostage_Rescue.sqf",
+		["\z\addons\dayz_server\addons\Fmission\FMission_Hostage_Rescue.sqf",
 		"\z\addons\dayz_server\addons\Fmission\mission_name.sqf"];
 _scriptselected = _scriptslist select (floor(random(count _scriptslist)));
 [] execVM _scriptselected;
