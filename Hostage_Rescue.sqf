@@ -92,12 +92,6 @@ _spawnMarker = 'center';
 _markerRadius = 350; // Radius the loot can spawn and used for the marker
 _markercolor = "ColorGreen";
 
-/*
-//Testing Only
-_position = [6585.3418, 9387.4854];
-_loot_pos = [6585.3418, 9387.4854];
-*/
-
 // Random location
 _position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,2000,0] call BIS_fnc_findSafePos;
 _loot_pos = [_position,0,(_markerRadius - 100),10,0,2000,0] call BIS_fnc_findSafePos;
