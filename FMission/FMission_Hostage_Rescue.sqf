@@ -183,10 +183,6 @@ if ((_hostageunitsAlive == 2) && (_attackerunitsAlive == 4)) then
 		{
 		[nil,nil,rTitleText,"The captors have been eliminated and the hostages survived", "PLAIN",10] call RE;
 		
-		// Cut the grass around the loot position
-		_clutter = createVehicle ["ClutterCutter_small_2_EP1", _loot_pos, [], 0, "CAN_COLLIDE"];
-		_clutter setPos _loot_pos;
-		
 		// Create loot box
 		diag_log("MISSION: Hostage Rescue - Hostages survived creating loot box");
 		_loot_box = createVehicle [_loot_box,_loot_pos,[], 0, "NONE"];
