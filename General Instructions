@@ -5,7 +5,7 @@ Section B: FMission_Launcher.sqf
 Section C: FLoot_XXXX.sqf
 
 ----------------------------------------------------------------------------------------------------------
-Section A: FMarker
+Section A: FMarker.sqf
 
 Description:
 FMarker is a marker refresh script designed for use with the stock Epoch Event system.
