@@ -1,5 +1,5 @@
 /*
-	File Name: Hostage_Rescue.sqf
+	File Name: FMission_Hostage_Rescue.sqf
 	File Created: 12/29/2013
 	File Version: 1.2
 	File Author: Foamy 
