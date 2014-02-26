@@ -24,6 +24,23 @@ Drop the script in the "Modules" folder on your server and change the call line 
 Detail Way:
 Create a seperate folder for FMarker called FMarker on your server in the addons directory and put it in 
 there.
+Call it from your Mission script like this:
+_null = [_position,_loot_pos,_markerRadius,_markercolor,false] execVM "\z\addons\dayz_server\addons\FMarker\FMarker.sqf";
+
+The call is expecting 5 parameters (position,loot position,marker radius, marker color, debug true or false)
+1) position - where the marker is
+2) loot position - for debug if debug is true.
+3) marker radius - how big the marker is
+4) marker color - what color the marker will be
+5) true or false - for debug true false (puts the dot where the loot position is for debug purposes)
+
+define the variables in your script before the marker call like this:
+_spawnRadius = 5000;
+_spawnMarker = 'center';
+_markerRadius = 350; // Radius the loot can spawn and used for the marker
+_markercolor = "ColorGreen";
+_position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,2000,0] call BIS_fnc_findSafePos;
+_loot_pos = [_position,0,(_markerRadius - 100),10,0,2000,0] call BIS_fnc_findSafePos;
 
 -----------------------------------------------------------------------------------------------------------
 
