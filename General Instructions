@@ -28,8 +28,8 @@ there.
 Section B: FMission_Launcher.sqf
 
 Description:
-FMission_Launcher.sqf is a mission launcher for use with Epochs built in Event system. It allows unlimited random mission 
-selection from one entry in your init. I run it twice an hour (2 entries in init)
+FMission_Launcher.sqf is a mission launcher for use with Epochs built in Event system. It allows unlimited 
+random mission selection from one entry in your init. I run it twice an hour (2 entries in init)
 
 Instructions:
 1) Create a folder called FMission and put your mission scripts in there.
