@@ -1,9 +1,9 @@
 /*
 	File Name: FMission_Hostage_Rescue.sqf
 	File Created: 12/29/2013
-	File Version: 1.2
+	File Version: 1.3
 	File Author: Foamy 
-	File Last Edit Date: 2/9/2014
+	File Last Edit Date: 2/26/2014
 	File Description: Hostage Rescue Mission
 */
 
@@ -27,7 +27,7 @@ private ["_missionSpawnChance", "_spawnMarker", "_spawnRadius", "_markerRadius",
 
 diag_log("MISSION: Hostage Rescue Script Started");
 
-_missionSpawnChance =  .50;
+_missionSpawnChance =  .40;
 _spawnRoll = random 1;
 
 diag_log("MISSION: Hostage Rescue - Checking MissionSpawnChance");
@@ -142,8 +142,6 @@ diag_log("MISSION: Hostage Rescue - Spawning Attackers");
 
 //[_attackgroup, _loot_box] call BIS_fnc_taskDefend;
 
-
-// Send center message to users 
 [nil,nil,rTitleText,"A camp holding local women hostage has been reported. These camps move quickly so hero up and save these women! Check your map for the camp's reported vicinity.", "PLAIN",10] call RE;
 
 // <<<<<<This pauses script until it times out or a unit is killed>>>>>>
