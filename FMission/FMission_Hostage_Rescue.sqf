@@ -31,7 +31,7 @@ _missionSpawnChance =  .40;
 _spawnRoll = random 1;
 
 diag_log("MISSION: Hostage Rescue - Checking MissionSpawnChance");
-if (_spawnRoll < _missionSpawnChance and !_debug) exitWith {};
+if (_spawnRoll > _missionSpawnChance and !_debug) exitWith {};
 
 sleep .5;
 diag_log("MISSION: Hostage Rescue - MissionSpawnChance Success");
