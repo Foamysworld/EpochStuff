@@ -37,7 +37,7 @@ sleep .5;
 diag_log("MISSION: Hostage Rescue - MissionSpawnChance Success");
 
 sleep .5;
-diag_log("MISSION: Hostage Rescue - Mission Started");
+diag_log("MISSION: Hostage Rescue - Mission Script Started");
 
 EPOCH_MISSION_RUNNING = true;
 
