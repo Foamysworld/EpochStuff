@@ -16,7 +16,7 @@ private ["_spawnRoll", "_eventSpawnChance", "_scriptselected", "_scriptslist"];
 _eventSpawnChance =  1;
 _spawnRoll = random 1;
 diag_log("Checking Spawn Chance");
-if (_spawnRoll < _eventSpawnChance and !_debug) exitWith {};
+if (_spawnRoll > _eventSpawnChance and !_debug) exitWith {};
 
 diag_log("Spawn Chance Success");
 
