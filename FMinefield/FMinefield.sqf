@@ -37,22 +37,22 @@ _pos = getPosATL _minefield_spawn_PH;
 _initCode = "";
 _minefield = [];
 
-_signpos = [(_pos select 0) + 35, (_pos select 1),0];
+_signpos = [(_pos select 0) + 50, (_pos select 1),0];
 _s1 = "Sign_Danger" createVehicle _signpos;
 _minefield = _minefield + [_s1];
 _s1 setdir 90;
 
-_signpos = [(_pos select 0) - 35, (_pos select 1),0];
+_signpos = [(_pos select 0) - 50, (_pos select 1),0];
 _s2 = "Sign_Danger" createVehicle _signpos;
 _minefield = _minefield + [_s2];
 _s2 setdir 270;
 
-_signpos = [(_pos select 0) , (_pos select 1) + 35,0];
+_signpos = [(_pos select 0) , (_pos select 1) + 50,0];
 _s3 = "Sign_Danger" createVehicle _signpos;
 _minefield = _minefield + [_s3];
 _s3 setdir 0;
 
-_signpos = [(_pos select 0) , (_pos select 1) - 35,0];
+_signpos = [(_pos select 0) , (_pos select 1) - 50,0];
 _s4 = "Sign_Danger" createVehicle _signpos;
 _minefield = _minefield + [_s4];
 _s4 setdir 180;
@@ -61,7 +61,7 @@ _i = 1;
 _mine = 0;
 _mine_count = 50;
 _height = 0;
-_spread = 35;
+_spread = 50;
 
 while {_mine < _mine_count} do
 	{
