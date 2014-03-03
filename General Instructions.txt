@@ -5,6 +5,7 @@ Last Updated: 2/26/2014
 Section A: FMarker.sqf
 Section B: FMission_Launcher.sqf
 Section C: FLoot_XXXX.sqf
+Section D: FMinefield.sqf
 
 ----------------------------------------------------------------------------------------------------------
 Section A: FMarker.sqf
@@ -77,6 +78,21 @@ _unitname = _unitgroup createUnit ["UNIT_TYPE", _location, [], 0, "Form"];
 _unitname setUnitPos "AUTO";
 _null = [_unitname] execVM "\z\addons\dayz_server\addons\FLoot\FLoot_Bandit.sqf";
 
-Easy Peasy.
+---------------------------------------------------------------------------------------------------------------
+
+Section D: FMinefield.sqf
+
+Description:
+FMinefield creates a minefield with warning signs around any postion. Will disappear on server restarts.
+Adjustable spawn chance, number of mines, mine spread, minefield radius and faction of minefield.
+
+Instructions:
+1) Create file called FMinefield.sqf and copy the contents in it.
+2) Create a folder called "FMinefield" in your server addons folder and copy FMinefield.sqf to it.
+3) Call FMinefield.sqf from your mission script.
+example:
+It uses 2 variables. (position and faction of minefield)
+nul=[_pos,east] execVM "\z\addons\dayz_server\addons\FMinefield\FMinefield.sqf";
+
 
 ---------------------------------------------------------------------------------------------------------------
