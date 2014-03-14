@@ -93,8 +93,8 @@ _markerRadius = 350; // Radius the loot can spawn and used for the marker
 _markercolor = "ColorGreen";
 
 // Random location
-_position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,2000,0] call BIS_fnc_findSafePos;
-_loot_pos = [_position,0,(_markerRadius - 100),10,0,2000,0] call BIS_fnc_findSafePos;
+_position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,20,0] call BIS_fnc_findSafePos;
+_loot_pos = [_position,0,(_markerRadius - 100),10,0,20,0] call BIS_fnc_findSafePos;
 
 _null = [_position,_loot_pos,_markerRadius,_markercolor,false] execVM "\z\addons\dayz_server\addons\FMarker\FMarker.sqf";
 
