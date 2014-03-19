@@ -92,7 +92,7 @@ _position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,20,0] call BIS_fnc_fi
 _loot_pos = [_position,0,(_markerRadius - 100),10,0,20,0] call BIS_fnc_findSafePos;
 
 //---------------------------------------------------------------------------------
-// Add Mission Body STARTS Here
+// Mission Body STARTS Here
 // Add a base?
 // Add some AI to patrol?
 // Add some Vehicle and Heli patrols?
