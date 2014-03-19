@@ -1,0 +1,26 @@
+Mission List:
+
+------------------------------------------------------------------------------
+
+FMission_Hostage_Rescue.sqf
+
+The mission spawns 2 hostages and 4 guards inside a tent randomly on the map 
+somewhere. The objective is to kill all the guards without killing a hostage 
+within the allowed time, which is currently set to 20 minutes. The script will 
+time out if the time limit is reached and nothing is killed. The loot will only 
+spawn AFTER all guards are killed and all hostages survive. If at any time 
+during the mission a hostage is killed the mission will immediately fail and 
+clear itself from the map.
+
+FMission_Hostage_Rescue requires the following files:
+1. FLoot_Bandit.sqf
+2. FLoot_Sniper.sqf
+3. FLoot_Medic.sqf
+4. FMarker.sqf
+
+------------------------------------------------------------------------------
+
+
+
+
+
