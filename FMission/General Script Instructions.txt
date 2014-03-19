@@ -26,7 +26,7 @@ Detail Way:
 Create a seperate folder for FMarker called FMarker on your server in the addons directory and put it in 
 there.
 Call it from your Mission script like this:
-_null = [_position,_loot_pos,_markerRadius,_markercolor,false] execVM "\z\addons\dayz_server\addons\FMarker\FMarker.sqf";
+_null = [_position,_loot_pos,_markerRadius,_markercolor,false] execVM "\z\addons\dayz_server\addons\FMission\FMarker\FMarker.sqf";
 
 The call is expecting 5 parameters (position,loot position,marker radius, marker color, debug true or false)
 1) position - where the marker is
@@ -44,7 +44,7 @@ _markercolor = "ColorGreen";
 _position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,2000,0] call BIS_fnc_findSafePos;
 _loot_pos = [_position,0,(_markerRadius - 100),10,0,2000,0] call BIS_fnc_findSafePos;
 
-_null = [_position,_loot_pos,_markerRadius,_markercolor,false] execVM "\z\addons\dayz_server\addons\FMarker\FMarker.sqf";
+_null = [_position,_loot_pos,_markerRadius,_markercolor,false] execVM "\z\addons\dayz_server\addons\FMission\FMarker\FMarker.sqf";
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -76,7 +76,7 @@ Instructions:
 Example:
 _unitname = _unitgroup createUnit ["UNIT_TYPE", _location, [], 0, "Form"];
 _unitname setUnitPos "AUTO";
-_null = [_unitname] execVM "\z\addons\dayz_server\addons\FLoot\FLoot_Bandit.sqf";
+_null = [_unitname] execVM "\z\addons\dayz_server\addons\FMission\FLoot\FLoot_Bandit.sqf";
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Instructions:
 3) Call FMinefield.sqf from your mission script.
 example:
 It uses 2 variables. (position and faction of minefield)
-nul=[_pos,east] execVM "\z\addons\dayz_server\addons\FMinefield\FMinefield.sqf";
+nul=[_pos,east] execVM "\z\addons\dayz_server\addons\FMission\FMinefield\FMinefield.sqf";
 
 
 ---------------------------------------------------------------------------------------------------------------
