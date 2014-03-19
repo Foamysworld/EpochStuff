@@ -92,7 +92,7 @@ Instructions:
 3) Call FMinefield.sqf from your mission script.
 example:
 It uses 2 variables. (position and faction of minefield)
-nul=[_pos,east] execVM "\z\addons\dayz_server\addons\FMission\FMinefield\FMinefield.sqf";
+[_loot_pos,east] execVM "\z\addons\dayz_server\addons\FMission\FMinefield\FMinefield.sqf";
 
 
 ---------------------------------------------------------------------------------------------------------------
